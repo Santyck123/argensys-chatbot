@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import Image from 'next/image'
+
+const LOGO_URL = 'https://raw.githubusercontent.com/Santyck123/argensys-chatbot/main/logo.png'
 
 const MAX_MESSAGES = 20
 
@@ -146,7 +147,8 @@ export default function ChatPage() {
       }`}>
         <div className="flex flex-col items-center gap-3 text-center">
           <div className="w-20 h-20 relative">
-            <Image src="/logo.png" alt="Argensys" fill className="object-contain drop-shadow-xl" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={LOGO_URL} alt="Argensys" className="w-full h-full object-contain drop-shadow-xl" />
           </div>
           <div>
             <h1 className="text-white font-bold text-base leading-tight">Sistema de Automatización<br />para Inmobiliarias</h1>

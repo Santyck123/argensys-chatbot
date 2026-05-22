@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Argensys — Sistema de Automatización para Inmobiliarias',
   description: 'Asesor inmobiliario virtual impulsado por inteligencia artificial.',
-  icons: { icon: '/logo.png' },
+  icons: { icon: 'https://raw.githubusercontent.com/Santyck123/argensys-chatbot/main/logo.png' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
